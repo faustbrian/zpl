@@ -1,0 +1,67 @@
+{
+    "name": "cline/zpl",
+    "description": "Convert PDFs and images into ZPL output for Zebra printers.",
+    "license": "MIT",
+    "keywords": [
+        "php"
+    ],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "brian@cline.sh"
+        }
+    ],
+    "require": {
+        "php": "^8.5.0",
+        "facade/ignition-contracts": "^1.0.2",
+        "guzzlehttp/guzzle": "^7.10",
+        "illuminate/collections": "^12.36 || ^13.0",
+        "monolog/monolog": "^3.10",
+        "psr/log": "^3.0.2"
+    },
+    "require-dev": {
+        "cline/coding-standard": "^2.0.2",
+        "pestphp/pest": "^4.4.3",
+        "pestphp/pest-plugin-type-coverage": "^4.0.3",
+        "phpstan/phpstan": "^2.1.42",
+        "rector/rector": "^2.3.9",
+        "symfony/var-dumper": "^7.4.0 || ^8.0.6"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Cline\\Zpl\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "ergebnis/composer-normalize": true,
+            "pestphp/pest-plugin": true
+        }
+    },
+    "scripts": {
+        "lint": "vendor/bin/ecs check --fix",
+        "refactor": "rector",
+        "test": [
+            "@test:lint",
+            "@test:arch",
+            "@test:type-coverage",
+            "@test:unit",
+            "@test:types",
+            "@test:refactor"
+        ],
+        "test:arch": "php bin/check-naming-conventions.php",
+        "test:lint": "vendor/bin/ecs check",
+        "test:refactor": "rector --dry-run",
+        "test:type-coverage": "pest --parallel --min=80 --type-coverage",
+        "test:types": "phpstan",
+        "test:unit": "XDEBUG_MODE=coverage php -d pcov.enabled=0 vendor/bin/pest tests/Unit --min=80 --coverage"
+    }
+}
