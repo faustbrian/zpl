@@ -14,7 +14,7 @@
     "require": {
         "php": "^8.5.0",
         "facade/ignition-contracts": "^1.0.2",
-        "guzzlehttp/guzzle": "^7.10",
+        "guzzlehttp/guzzle": "^7.10 || ^8.1",
         "illuminate/collections": "^12.36 || ^13.0",
         "monolog/monolog": "^3.10",
         "psr/log": "^3.0.2"

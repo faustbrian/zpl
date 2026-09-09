@@ -17,7 +17,6 @@ use Rector\CodingStyle\Rector\Encapsed\EncapsedStringsToSprintfRector;
 use Rector\CodingStyle\Rector\Stmt\NewlineAfterStatementRector;
 use Rector\DeadCode\Rector\Stmt\RemoveUnreachableStatementRector;
 use Rector\Php80\Rector\Class_\ClassPropertyAssignToConstructorPromotionRector;
-use Rector\Php81\Rector\ClassMethod\NewInInitializerRector;
 use Rector\Php81\Rector\Property\ReadOnlyPropertyRector;
 use Rector\Php82\Rector\Class_\ReadOnlyClassRector;
 use Rector\TypeDeclaration\Rector\ArrowFunction\AddArrowFunctionReturnTypeRector;
@@ -29,6 +28,8 @@ use RectorLaravel\Rector\MethodCall\ConvertEnumerableToArrayToAllRector;
 return Factory::create(
     paths: [__DIR__.'/src', __DIR__.'/tests'],
     skip: [
+        __DIR__.'/src/ImageToZplConverter.php',
+        __DIR__.'/src/PdfToZplConverter.php',
         RemoveUnreachableStatementRector::class => [__DIR__.'/tests'],
         NewlineBetweenClassLikeStmtsRector::class,
         ThrowIfAndThrowUnlessExceptionsToUseClassStringRector::class,
@@ -37,7 +38,6 @@ return Factory::create(
         EncapsedStringsToSprintfRector::class,
         ReadOnlyClassRector::class,
         SortCallLikeNamedArgsRector::class,
-        NewInInitializerRector::class,
         AddArrowFunctionReturnTypeRector::class,
         ReadOnlyPropertyRector::class,
         ConvertEnumerableToArrayToAllRector::class,
