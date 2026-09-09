@@ -14,3 +14,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Replaced generic `PdfToZplException` throws with specific exception
   classes and added the package-level `ZplException` marker interface.
+- Allow Guzzle 7 and 8 for label image generation.
+- Updated Rector configuration for the current Rector 2 release.
