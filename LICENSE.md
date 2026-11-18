@@ -1,6 +1,7 @@
 The MIT License (MIT)
 
-Copyright (c) Brian Faust <brian@cline.sh>
+Copyright (c) 2025 Benjamin Faerber
+Copyright (c) 2026 Brian Faust <brian@cline.sh>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

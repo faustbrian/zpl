@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added repository-level maintainer guidance in `AGENTS.md`.
 
 ### Changed
+- Restored the copyright and MIT notice of pdf-to-zpl by Benjamin Faerber
+  in `LICENSE.md`, file headers, `@author` tags and the README credits.
 - Replaced generic `PdfToZplException` throws with specific exception
   classes and added the package-level `ZplException` marker interface.
 - Allow Guzzle 7 and 8 for label image generation.

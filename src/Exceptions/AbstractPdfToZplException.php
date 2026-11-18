@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
 /**
- * Copyright (C) Brian Faust
+ * Copyright (C) Benjamin Faerber, Brian Faust
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -14,7 +14,10 @@ use Stringable;
 use Throwable;
 
 /**
- * A custom exception to let you know this is a library related error * @author Brian Faust <brian@cline.sh>
+ * A custom exception to let you know this is a library related error
+ *
+ * @author Benjamin Faerber
+ * @author Brian Faust <brian@cline.sh>
  */
 abstract class AbstractPdfToZplException extends Exception implements Stringable, ZplExceptionInterface
 {

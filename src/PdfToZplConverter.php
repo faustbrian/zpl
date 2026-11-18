@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
 /**
- * Copyright (C) Brian Faust
+ * Copyright (C) Benjamin Faerber, Brian Faust
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -24,7 +24,10 @@ use function file_get_contents;
 use function mb_strlen;
 
 /**
- * Converts a PDF file into a list of ZPL commands * @author Brian Faust <brian@cline.sh>
+ * Converts a PDF file into a list of ZPL commands
+ *
+ * @author Benjamin Faerber
+ * @author Brian Faust <brian@cline.sh>
  */
 final class PdfToZplConverter implements ZplConverterServiceInterface
 {

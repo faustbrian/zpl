@@ -49,6 +49,9 @@ If you discover any security related issues, please use the [GitHub security rep
 
 ## Credits
 
+This package is based on [pdf-to-zpl][link-original] by Benjamin Faerber, released under the MIT License.
+
+- [Benjamin Faerber][link-original-author]
 - [Brian Faust][link-maintainer]
 - [All Contributors][link-contributors]
 
@@ -65,5 +68,7 @@ The MIT License. Please see [License File](LICENSE.md) for more information.
 [link-packagist]: https://packagist.org/packages/cline/zpl
 [link-downloads]: https://packagist.org/packages/cline/zpl
 [link-security]: https://github.com/faustbrian/zpl/security
+[link-original]: https://github.com/benfaerber/pdf-to-zpl
+[link-original-author]: https://github.com/benfaerber
 [link-maintainer]: https://github.com/faustbrian
 [link-contributors]: ../../contributors

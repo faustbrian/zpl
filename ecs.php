@@ -8,6 +8,7 @@
  */
 
 use Cline\CodingStandard\EasyCodingStandard\Factory;
+use Cline\CodingStandard\PhpCsFixer\CopyrightHeader;
 use PhpCsFixerCustomFixers\Fixer\StringableInterfaceFixer;
 
 return Factory::create(
@@ -15,4 +16,5 @@ return Factory::create(
     skip: [
         StringableInterfaceFixer::class, // Upstream fixer crashes on this package layout.
     ],
+    copyrightHeader: new CopyrightHeader('Benjamin Faerber, Brian Faust'),
 );

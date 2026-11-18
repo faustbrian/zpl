@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
 /**
- * Copyright (C) Brian Faust
+ * Copyright (C) Benjamin Faerber, Brian Faust
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -15,6 +15,7 @@ use Facade\IgnitionContracts\Solution;
 use Throwable;
 
 /**
+ * @author Benjamin Faerber
  * @author Brian Faust <brian@cline.sh>
  */
 final class ImagickPdfAccessPolicyException extends AbstractPdfToZplException implements ProvidesSolution

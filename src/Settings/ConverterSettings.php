@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 
 /**
- * Copyright (C) Brian Faust
+ * Copyright (C) Benjamin Faerber, Brian Faust
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -25,7 +25,10 @@ use function is_string;
 use function json_encode;
 
 /**
- * Settings for the PDF to ZPL conversion * @author Brian Faust <brian@cline.sh>
+ * Settings for the PDF to ZPL conversion
+ *
+ * @author Benjamin Faerber
+ * @author Brian Faust <brian@cline.sh>
  */
 final class ConverterSettings
 {
